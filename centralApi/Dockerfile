@@ -6,6 +6,7 @@ COPY . .
 
 RUN ./mvnw clean package -DskipTests
 
-EXPOSE 8080
+EXPOSE 8082
+
 
 CMD ["java", "-jar", "target/*.jar"]
